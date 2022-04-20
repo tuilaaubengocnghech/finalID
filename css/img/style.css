@@ -1,0 +1,260 @@
+:root {
+    --primary-color: black;
+    --background-color: white;
+    --secon-color: grey;
+    --grey: grey;
+    --white: white;
+}
+*{
+    font-family: 'Lemon';
+    font-family: 'Work Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    color: unset;
+    text-decoration: none;
+}
+body, 
+html{
+    background-color: var(--background-color);
+    scroll-behavior: smooth;
+    position: relative;
+    overflow-x: hidden;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: var(--background-color);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.bst-wrap{
+    max-width: 1366px;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.logo{
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+.bst{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bst-item{
+    font-size: 30px;
+    margin-left: 2rem;
+    padding: .5rem 1.5rem;
+    font-weight: 800;
+    color: var(--grey);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+.right-bst{
+    font-size: 30px;
+}
+.bst-item:hover, .bst-item.active{
+    color: red;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+}
+.cart-vans{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.cart-vans:hover{
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 1rem;
+}
+.fullheight{
+    height: 100vh;
+}
+.align-items-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-img-fixed{
+    background-attachment: fixed;
+}
+.container{
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+section {
+    padding: 9rem 0;
+}
+.slogan{
+    text-align: left;
+}
+.slogan h1{
+    font-size: 7rem;
+    color: var(--primary-color);
+}
+.slogan button{
+    padding: 1rem 5rem;
+    outline: none;
+    border: none;
+    background-color: var(--background-color);
+    border: .125rem solid var(--primary-color);
+    border-radius: 2rem;
+    color: var(--primary-color);
+    margin: 3rem 0;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .5s ease-in-out;
+}
+.slogan button:hover{
+    background-color: var(--primary-color);
+    color: var(--grey);
+}
+.fullwidth{
+    width: 100%;
+}
+#about img{
+    border-radius: 2rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px;
+}
+.about-slogan{
+    padding: 4rem;
+    background-color: var(--grey);
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    transform: translateX(-10rem);
+}
+.about-slogan h3{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: black;
+}
+.primary-color{
+    color: black;
+}
+.shoes-vans{
+    padding: 4rem;
+    background-color: gray;
+    border-radius: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.shoes-vans h1{
+    color: var(--grey);
+}
+.shoes-vans p{
+    margin: 2rem 0;
+}
+.shoes{
+    display: flex;
+}
+.shoes button{
+    padding: .5rem 2.5rem;
+    margin: 0 1rem;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    font-weight: 600;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+
+}
+.shoes button:hover,
+.shoes button.active{
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+.shoes-item-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 3rem;
+}
+.shoes-item{
+    width: 25%;
+    height: 30rem;
+    padding: 1rem;
+}
+.item-wrap{
+    height: 100%;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+.item-wrap:hover{
+    box-shadow:rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.item-img{
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+.img-holder{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    border-radius: 2rem;
+    transition: .5s ease-in-out;
+}
+.img-holder:hover {
+    transform: scale(2) rotate(45deg);
+}
+.item-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 0 1rem;
+}
+.item-info h3{
+    color:darkturquoise;
+    font-size: 20px;
+}
+.item-info>div:first-child{
+    text-align: left;
+}
+.footer{
+    color: var(--white);
+}
+.footer h1{
+    color: var(--primary-color);
+}
+.input-group{
+    padding: 1rem;
+    border: .125rem solid wheat;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.input-group input{
+    flex: auto;
+    outline: none;
+    border: none;
+    color: red;
+    background-color: transparent;
+}
